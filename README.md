@@ -1,40 +1,56 @@
 # Prime-Factorization-and-Primality-Testing-Program
 
 # Introduction
-The Prime Factorization and Primality Testing Program is a console application written in C# that serves two main purposes: prime factorization and primality testing. Prime factorization is the process of breaking down a positive integer into its prime factors, and primality testing determines whether a given positive integer is prime or not. This program provides a user-friendly interface to input integers, perform factorization, and test for primality.
+The Prime Factorization and Primality Testing Program is a Windows Forms application that allows users to perform prime factorization and primality testing on a given positive integer greater than 1. This program is designed to help users understand the fundamental concepts of prime numbers and factorization while providing a user-friendly interface for performing these operations.
 
 ## Technical Details
 This program is written in C# and utilizes basic mathematical concepts and control structures to achieve its objectives. Here are some key technical details:
 
 • Language: C#.<br />
-• Development Environment: Visual Studio or any C# IDE.<br />
-• Libraries Used: System (for console I/O), Math (for square root calculations).<br />
+• Development Environment: Visual Studio (or any C# IDE).<br />
+• Platform: Windows Forms Application.<br />
 
 ## How It Works
-1. The program begins by prompting the user to enter a positive integer greater than 1.
+The program consists of three main components: the user interface (Form1), the PrimeFactorization class for performing the calculations, and the Program class to run the application.
 
-2. If the user provides valid input, the program proceeds to either perform prime factorization or primality testing, depending on the input value.
-
-3. For prime factorization, the program iterates through the integer's factors, starting from 2, and appends them to the result string in the format "factor1 * factor2 * ...". It keeps dividing the input integer by its factors until the quotient becomes 1. If the input integer is prime, it is indicated as such.
-
-4. For primality testing, the program checks whether the input integer is divisible by any integer from 2 to the square root of the input. If it is, the number is not prime; otherwise, it is considered prime.
-
-5. The program displays the results, including the prime factorization or the primality test outcome.
+## User Interface(Form1)
+The user interface provides an input field for entering a positive integer greater than 1, a "Calculate" button to trigger the calculations, and a text box for displaying the results. It also has labels to provide instructions and a title for the program.
 
 ## Functions and Classes
-• `PrimeFactorization.Factorize(int n)`- This static method performs prime factorization and primality testing for the given integer n and returns the results as a formatted string.<br />
-• `Program.Main()`- The program's entry point that handles user input invokes the factorization-primality test, and displays the results.<br />
+# PrimeFactorization Class
+Factorize(int n): string: This static method takes an integer n as input and returns a string containing the prime factorization and a primality test result for the input number. If the input is invalid or less than 2, it returns an error message.
+The PrimeFactorization class contains the logic for prime factorization and primality testing. Here's how it works:
 
-## Installation and Usage
-1. Ensure you have the .NET Framework installed on your system.
+1. The user enters a positive integer greater than 1 in the input field.
 
-2. Open the code in Visual Studio or any C# IDE.
+2. Clicking the "Calculate" button triggers the calculateButton_Click event handler.
 
-3. Build and run the program.
+3. The input is validated, and if it's a valid positive integer, the Factorize method from the 'PrimeFactorization' class is called.
 
-4. Follow the on-screen prompts to input a positive integer greater than 1, and the program will perform factorization or primality testing accordingly.
+4. The 'Factorize' method calculates the prime factors of the entered number and checks if the number itself is prime.
 
-5. To exit the program, type "exit" when prompted for input.
+5. The results are displayed in the result text box.
+
+# Form1 Class (User Interface)
+• 'calculateButton_Click(object sender, EventArgs e)' : Event handler for the "Calculate" button. It reads the user input, calls PrimeFactorization.Factorize to perform the calculations, and displays the result in the text box.
+• 'InitializeComponent()' : Initializes the user interface components and their properties.
+
+# Program Class
+Main(): The entry point of the application. It initializes and runs the main form.
+The Program class contains the Main method that initializes and runs the application by creating an instance of Form1 and displaying it.
+
+##Installation and Usage
+1. Ensure you have a C# development environment installed (e.g., Visual Studio).
+
+2. Clone or download the source code of the Prime Factorization and Primality Testing Program.
+
+3. Open the project in your C# IDE.
+
+4. Build and run the application.
+
+5. Enter a positive integer greater than 1 in the input field and click the "Calculate" button.
+
+6. View the prime factorization and primality test results in the text box.
 
 ## Conclusion
-The Prime Factorization and Primality Testing Program is a simple yet useful tool for understanding the prime factors of a positive integer and determining whether it is prime. It can be educational and handy for various mathematical and programming purposes. This project provides a practical example of basic mathematical algorithms and console-based user interaction in C#.
+The Prime Factorization and Primality Testing Program provides an educational and practical tool for understanding prime numbers, factorization, and primality testing. Users can input positive integers greater than 1 to explore these mathematical concepts. This program serves as a simple and interactive way to learn and apply fundamental principles of number theory.
