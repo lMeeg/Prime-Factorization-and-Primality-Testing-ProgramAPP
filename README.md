@@ -32,7 +32,7 @@ The PrimeFactorization class contains the logic for prime factorization and prim
 5. The results are displayed in the result text box.
 
 ## Form1 Class (User Interface)
-• 'calculateButton_Click(object sender, EventArgs e)' : Event handler for the "Calculate" button. It reads the user input, calls PrimeFactorization.Factorize to perform the calculations, and displays the result in the text box.
+• 'calculateButton_Click(object sender, EventArgs e)' : Event handler for the "Calculate" button. It reads the user input, calls PrimeFactorization. Factorize to perform the calculations, and displays the result in the text box.
 • 'InitializeComponent()' : Initializes the user interface components and their properties.
 
 ## Program Class
