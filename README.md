@@ -39,7 +39,7 @@ The PrimeFactorization class contains the logic for prime factorization and prim
 Main(): The entry point of the application. It initializes and runs the main form.
 The Program class contains the Main method that initializes and runs the application by creating an instance of Form1 and displaying it.
 
-## Installation and Usage
+# Installation and Usage
 1. Ensure you have a C# development environment installed (e.g., Visual Studio).
 
 2. Clone or download the source code of the Prime Factorization and Primality Testing Program.
@@ -52,5 +52,5 @@ The Program class contains the Main method that initializes and runs the applica
 
 6. View the prime factorization and primality test results in the text box.
 
-## Conclusion
+# Conclusion
 The Prime Factorization and Primality Testing Program provides an educational and practical tool for understanding prime numbers, factorization, and primality testing. Users can input positive integers greater than 1 to explore these mathematical concepts. This program serves as a simple and interactive way to learn and apply fundamental principles of number theory.
