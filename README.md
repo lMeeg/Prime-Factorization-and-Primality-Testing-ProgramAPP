@@ -16,8 +16,8 @@ The program consists of three main components: the user interface (Form1), the P
 ## User Interface(Form1)
 The user interface provides an input field for entering a positive integer greater than 1, a "Calculate" button to trigger the calculations, and a text box for displaying the results. It also has labels to provide instructions and a title for the program.
 
-## Functions and Classes
-# PrimeFactorization Class
+# Functions and Classes
+## PrimeFactorization Class
 Factorize(int n): string: This static method takes an integer n as input and returns a string containing the prime factorization and a primality test result for the input number. If the input is invalid or less than 2, it returns an error message.
 The PrimeFactorization class contains the logic for prime factorization and primality testing. Here's how it works:
 
@@ -31,15 +31,15 @@ The PrimeFactorization class contains the logic for prime factorization and prim
 
 5. The results are displayed in the result text box.
 
-# Form1 Class (User Interface)
+## Form1 Class (User Interface)
 • 'calculateButton_Click(object sender, EventArgs e)' : Event handler for the "Calculate" button. It reads the user input, calls PrimeFactorization.Factorize to perform the calculations, and displays the result in the text box.
 • 'InitializeComponent()' : Initializes the user interface components and their properties.
 
-# Program Class
+## Program Class
 Main(): The entry point of the application. It initializes and runs the main form.
 The Program class contains the Main method that initializes and runs the application by creating an instance of Form1 and displaying it.
 
-##Installation and Usage
+## Installation and Usage
 1. Ensure you have a C# development environment installed (e.g., Visual Studio).
 
 2. Clone or download the source code of the Prime Factorization and Primality Testing Program.
